@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Cyber grid background layer for Immersive UI theme */
+.immersive-grid {
+  background-image: linear-gradient(rgba(0, 243, 255, 0.08) 1px, transparent 1px), 
+                    linear-gradient(90deg, rgba(0, 243, 255, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom CSS keyframe animations for high fidelity cyberpunk HUD scanning effects */
+@keyframes scan-line {
+  0% {
+    top: 5%;
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 90%;
+    opacity: 0.1;
+  }
+}
+
+.animate-scan-line {
+  animation: scan-line 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar adjustments for a premium console aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050508;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f3ff;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050508;
+}
+
+body {
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  background-color: #050508;
+}

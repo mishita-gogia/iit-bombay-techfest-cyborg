@@ -1,0 +1,6 @@
+{
+  "name": "Cyborg Landing Page",
+  "description": "A fully responsive futuristic landing page with a Cyborg Theme, sleek glassmorphic UI, smooth CSS/interactive animations, and interactive technology visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
